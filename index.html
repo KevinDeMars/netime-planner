@@ -9,7 +9,11 @@
   <title>NETime Planner</title>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/style.css" rel="stylesheet">
@@ -26,391 +30,345 @@
 </head>
 
 <body>
-  <div class="wrapper" id="wrapper">
-    <header>
-      <div class="banner row" id="banner">
-        <div class="parallax text-center" style="background-image: url(img/1.jpg);">
-          <div class="parallax-pattern-overlay">
-            <div class="container text-center" style="height:600px;padding-top:170px;">
-              <a href="#"><img id="site-title" class="wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="img/logo.png" alt=""/></a>
-              <h2 class="intro"><a href="index.html">NETime Planner</a></h2>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">NETime Planner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#banner">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#downloads">Downloads, Source Code, and Links</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="banner" id="banner">
+    <div class="parallax text-center" style="background-image: url(img/1.jpg);">
+      <div class="parallax-pattern-overlay">
+        <div class="container text-center" style="height:600px;padding-top:170px;">
+          <h2 class="intro"><a href="index.html">NETime Planner</a></h2>
         </div>
       </div>
-      <div class="menu">
-        <div class="navbar-wrapper">
-          <div class="container">
-            <div class="navwrapper">
-              <div class="navbar navbar-inverse navbar-static-top">
-                <div class="container">
-                  <div class="navArea">
-                    <div class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav">
-                        <li class="menuItem active"><a href="#wrapper">Home</a></li>
-                        <li class="menuItem"><a href="#about">About NETime Planner</a></li>
-                        <li class="menuItem"><a href="#vision">Project Vision</a></li>
-                        <li class="menuItem"><a href="#team">Our Team</a></li>
-                        <li class="menuItem"><a href="#feedback">Extra Section 1</a></li>
-                        <li class="menuItem"><a href="#contact">Extra Section 2</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!--about-->
-    <section class="aboutus" id="about">
-      <div class="container">
-        <div class="heading text-center">
-          <h2>What is NETime Planner?</h2>
-          <h3>I don't know. Why are you asking me?</h3>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!--project vision-->
-    <section class="specialties" id="vision">
-      <div class="container">
-        <div class="heading text-center">
-          <h2>Project Vision</h2>
-          <h3>A vision goes here.</h3>
-          <p>Maybe the grid gallery could be wireframes/concept art?</p>
-        </div>
-        <div id="grid-gallery" class="grid-gallery">
-          <section class="grid-wrap">
-            <ul class="grid">
-              <li class="grid-sizer"></li>
-              <!-- for Masonry column width -->
-              <li>
-                <figure>
-                  <img src="img/work/1.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/2.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/3.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/4.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/5.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/6.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-
-              <li>
-                <figure>
-                  <img src="img/work/7.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-
-              <li>
-                <figure>
-                  <img src="img/work/8.jpg" alt="" />
-                  <figcaption>
-                    <h3>Vitae fringilla elit</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </figcaption>
-                </figure>
-              </li>
-
-            </ul>
-          </section>
-          <!-- // end small images -->
-
-          <section class="slideshow">
-            <ul>
-              <li>
-                <figure>
-                  <img src="img/work/1.jpg" alt="" />
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/2.jpg" alt="" />
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/3.jpg" alt="" />
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/4.jpg" alt="" />
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/5.jpg" alt="" />
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/6.jpg" alt="" />
-                </figure>
-              </li>
-
-              <li>
-                <figure>
-                  <img src="img/work/7.jpg" alt="" />
-                </figure>
-              </li>
-
-              <li>
-                <figure>
-                  <img src="img/work/8.jpg" alt="" />
-                </figure>
-              </li>
-            </ul>
-            <nav>
-              <span class="icon nav-prev"></span>
-              <span class="icon nav-next"></span>
-              <span class="icon nav-close"></span>
-            </nav>
-            <div class="info-keys icon">Navigate with arrow keys</div>
-          </section>
-          <!-- // end slideshow -->
-        </div>
-      </div>
-    </section>
-
-    <!--portfolio-->
-    <section class="gallery" id="team">
-      <div class="container">
-        <div class="heading text-center">
-          <h2>The Team</h2>
-          <h3>We go here :)</h3>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="papers text-center">
-              <img src="img/team/1.jpg" alt=""><br/>
-              <a href="#"><b>Download my resume</b></a>
-              <h4 class="">My Teacher John Vandeley</h4>
-              <p>
-                Have you ever felt worried that your party will not raise up to your guest expectations? In design, vertical rhythm is the structure that guides a reader's eye through the content. Good vertical rhythm makes a layout more balanced and beautiful and its
-                content more readable. The time signature in sheet music visually depicts a song's rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="papers text-center">
-              <img src="img/team/2.jpg" alt=""><br/>
-              <a href="#"><b>Download my resume</b></a>
-              <h4 class="">My Teacher Stephanie Hellen</h4>
-              <p>
-                Have you ever felt worried that your party will not raise up to your guest expectations? In design, vertical rhythm is the structure that guides a reader's eye through the content. Good vertical rhythm makes a layout more balanced and beautiful and its
-                content more readable. The time signature in sheet music visually depicts a song's rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- // grid-gallery -->
-      </div>
-    </section>
-
-    <!--education-->
-    <section class="feedback" id="feedback">
-      <div class="container">
-        <div class="heading">
-          <h2>Education</h2>
-          <h3>Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.<br>
-				Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.</h3>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
-          <div class="text-center">
-            <div class="hi-icon-wrap hi-icon-effect">
-              <h4>MASTER OF COMPUTER SCIENCE</h4>
-              <h5>FEB 2012 - DEC 2014</h5>
-              <i class="fa fa-laptop"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
-          <div class="text-center">
-            <div class="hi-icon-wrap hi-icon-effect">
-              <h4>MASTER OF COMPUTER SCIENCE</h4>
-              <h5>FEB 2012 - DEC 2014</h5>
-              <i class="fa fa-book"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
-          <div class="text-center">
-            <div class="hi-icon-wrap hi-icon-effect">
-              <h4>MASTER OF COMPUTER SCIENCE</h4>
-              <h5>FEB 2012 - DEC 2014</h5>
-              <i class="fa fa-gear"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages." <cite>Jogn De, Programming<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite>            </blockquote>
-          <blockquote>Have you ever felt worried that your party will not raise up to your guest expectations? In design, vertical rhythm is the structure that guides a reader’s eye through the content. Good vertical rhythm makes a layout more balanced and beautiful
-            and its content more readable. The time signature in sheet music visually depicts a song’s rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines. <cite>Marta Kay, Business Development<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite>            </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!--education-->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="heading">
-          <h2>Contact</h2>
-          <h3>Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.<br>
-				 Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.</h3>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="contact-info">
-            <div class="col-md-5">
-              <h4>My Contact Info</h4>
-              <h5>Nullam elementum tellus pretium feugiat</h5>
-              <p>Fusce fermen tum neque a rutrum varius odio pede ullamcorp-er tellus ut dignissim nisi risus non tortor</p>
-              <ul>
-                <li><i class="fa fa-home fa-2x"></i> Home # 38, Suite 54 Elizebth Street</li>
-                <li><i class="fa fa-phone fa-2x"></i> +38 000 129900</li>
-                <li><i class="fa fa-envelope fa-2x"></i> info@domain.net</li>
-                <li><i class="fa fa-download fa-2x"></i> Download My Resume</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit" class="contact submit">Send Message</button></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--footer-->
-    <section class="footer" id="footer">
-      <p class="text-center">
-        <a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
-      </p>
-      <div class="container">
-        <ul>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-          <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-        </ul>
-        <p>&copy; MyResume Theme. All Rights Reserved.</p>
-        <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyResume
-          -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </section>
-
+    </div>
   </div>
-  <script src="js/jquery.js"></script>
+
+
+  <!--about-->
+  <section class="aboutus" id="about">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>What is NETime Planner?</h2>
+        <h3>NETime (pronounced "any time") Planner is an social planner focused on students.</h3>
+        <p>In addition to the basic actions of managing personal deadlines and activities, it supports sharing schedules
+        and collaborating on schedules with groups. Our goal is to make managing your schedule simple and convenient, with helpful features such
+        as automatically appending events to your next free time.</p>
+
+        <p>The features don't stop as soon as you've entered your info into your schedule. NETime Planner provides features
+        to analyze your schedule, giving you feedback on what percentage of time you have left for deadlines, how much
+        free time you have each week, and more.</p>
+
+        <p>If you don't want to spend much time entering information, this application is still for you. Advanced features
+          that require entering more data are entirely optional, and you can make your schedule as minimal as you want.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--project vision-->
+  <section id="vision">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>Project Vision</h2>
+        <h3>A vision goes here.</h3>
+        <p>Maybe the grid gallery could be wireframes/concept art?</p>
+      </div>
+      <div id="grid-gallery" class="grid-gallery">
+        <section class="grid-wrap">
+          <ul class="grid">
+            <li class="grid-sizer"></li>
+            <!-- for Masonry column width -->
+            <li>
+              <figure>
+                <img src="img/work/1.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/2.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/3.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/4.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/5.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/6.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="img/work/7.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="img/work/8.jpg" alt="" />
+                <figcaption>
+                  <h3>Vitae fringilla elit</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>
+              </figure>
+            </li>
+
+          </ul>
+        </section>
+        <!-- // end small images -->
+
+        <section class="slideshow">
+          Test
+          <ul>
+            <li>
+              <figure>
+                <img src="img/work/1.jpg" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/2.jpg" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/3.jpg" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/4.jpg" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/5.jpg" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/work/6.jpg" alt="" />
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="img/work/7.jpg" alt="" />
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="img/work/8.jpg" alt="" />
+              </figure>
+            </li>
+          </ul>
+          <nav>
+            <span class="icon nav-prev"></span>
+            <span class="icon nav-next"></span>
+            <span class="icon nav-close"></span>
+          </nav>
+          <div class="info-keys icon">Navigate with arrow keys</div>
+        </section>
+        <!-- // end slideshow -->
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>Our Team</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="papers text-center">
+            <img src="img/team/kevin.jpg" alt=""><br/>
+            <h4>Kevin DeMars</h4>
+            <ul>
+              <li>Project Manager</li>
+              <li>Primary Website Maintainer</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="papers text-center">
+            <img src="img/team/trenton.jpg" alt=""><br/>
+            <h4>Trenton Strickland</h4>
+            <ul>
+              <li>Your role(s)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="papers text-center">
+            <img src="img/team/joshua.jpg" alt=""><br/>
+            <h4>Joshua Kanagasabai</h4>
+            <ul>
+              <li>Your role(s)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="papers text-center">
+            <img src="img/team/eric.jpg" alt=""><br/>
+            <h4>Eric Jaroszewski</h4>
+            <ul>
+              <li>Your role(s)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="papers text-center">
+            <img src="img/team/max.jpg" alt=""><br/>
+            <h4>Max Cadeddu</h4>
+            <ul>
+              <li>Your role(s)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="papers text-center">
+            <img src="img/team/samuel.jpg" alt=""><br/>
+            <h4>Samuel Kim</h4>
+            <ul>
+              <li>Your role(s)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // grid-gallery -->
+    </div>
+  </section>
+
+  <section id="downloads">
+    <div class="container-fluid">
+      <div class="heading">
+        <h2>Downloads, Source Code, and Links</h2>
+        <h3>This project is under development. Downloads will be available mid-2020.</h3>
+        <a class="btn btn-secondary" href="https://github.com/KevinDeMars/netime-planner">View Source on GitHub</a>
+        <a class="btn btn-secondary" href="https://github.com/KevinDeMars/netime-planner/issues">View Issues on GitHub</a>
+        <p>Visual Paradigm Online Workspace ID: hhtilhvn</p>
+        <p>Unfortunately, it does not appear possible to publicly share Visual Paradigm repositories.</p>
+        <h3>Iteration 1 deliverables (UPCOMING)</h3>
+        <ul>
+          <li>Requirements List</li>
+          <li>Use Cases</li>
+          <li>Traceability Matrix</li>
+          <li>System Sequence Diagrams</li>
+          <li>Domain Model</li>
+          <li>Actors?</li>
+          <li>Teamwork Plan?</li>
+          <li>UI Wireframes</li>
+          <li>Timecards?</li>
+        </ul>
+        <a class="btn btn-secondary" href="downloads/iteration-1.zip">Download Iteration 1 Deliverables</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <section class="footer" id="footer">
+    <p class="text-center">
+      <a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+    </p>
+    <div class="container">
+      <ul>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+      </ul>
+      <p>&copy; MyResume Theme. All Rights Reserved.</p>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyResume
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </section>
+
   <script src="js/modernizr.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/menustick.js"></script>
+  <!--<script src="js/menustick.js"></script>-->
   <script src="js/parallax.js"></script>
   <script src="js/easing.js"></script>
   <script src="js/wow.js"></script>
@@ -425,7 +383,7 @@
   <script>
     wow = new WOW({}).init();
   </script>
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
     jQuery(function($) {
       $(document).ready(function() {
         //enabling stickUp on the '.navbar-wrapper' class
@@ -444,7 +402,7 @@
         });
       });
     });
-  </script>
+  </script>-->
 
 
 </body>
