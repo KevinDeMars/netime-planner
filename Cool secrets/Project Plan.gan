@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="NETime Planner" company="CSI 3471" webLink="http://" view-date="2020-02-02" view-index="0" gantt-divider-location="359" resource-divider-location="300" version="2.8.10" locale="en_US">
-    <description>
-        <![CDATA[Gantt Diagram for first iteration of software project.]]>
-    </description>
+    <description><![CDATA[Gantt Diagram for first iteration of software project.]]></description>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Name" width="220" order="0"/>
-        <field id="tpd4" name="Begin date" width="82" order="1"/>
-        <field id="tpd5" name="End date" width="53" order="2"/>
+        <field id="tpd3" name="Name" width="210" order="0"/>
+        <field id="tpd4" name="Begin date" width="79" order="1"/>
+        <field id="tpd5" name="End date" width="51" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
