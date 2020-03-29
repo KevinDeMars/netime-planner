@@ -82,23 +82,23 @@
             </task>
             <task id="84" name="Issue tracking/GIT" color="#8cb6ce" meeting="false" start="2020-03-18" duration="3" complete="0" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="70" name="Iteration 3" meeting="false" start="2020-03-23" duration="26" complete="0" expand="true">
-            <task id="71" name="maven" color="#8cb6ce" meeting="false" start="2020-03-23" duration="5" complete="0" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true">
+        <task id="70" name="Iteration 3" meeting="false" start="2020-03-24" duration="26" complete="0" expand="true">
+            <task id="71" name="maven" color="#8cb6ce" meeting="false" start="2020-03-24" duration="5" complete="0" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true">
                 <depend id="72" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="72" name="git" color="#8cb6ce" meeting="false" start="2020-03-30" duration="5" complete="0" thirdDate="2020-03-30" thirdDate-constraint="0" expand="true">
+            <task id="72" name="git" color="#8cb6ce" meeting="false" start="2020-03-31" duration="5" complete="0" thirdDate="2020-03-30" thirdDate-constraint="0" expand="true">
                 <depend id="73" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="73" name="GUI" color="#8cb6ce" meeting="false" start="2020-04-06" duration="5" complete="0" thirdDate="2020-04-06" thirdDate-constraint="0" expand="true">
+            <task id="73" name="GUI" color="#8cb6ce" meeting="false" start="2020-04-07" duration="5" complete="0" thirdDate="2020-04-06" thirdDate-constraint="0" expand="true">
                 <depend id="74" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="74" name="Prototype" color="#8cb6ce" meeting="false" start="2020-04-13" duration="5" complete="0" thirdDate="2020-04-13" thirdDate-constraint="0" expand="true">
+            <task id="74" name="Prototype" color="#8cb6ce" meeting="false" start="2020-04-14" duration="5" complete="0" thirdDate="2020-04-13" thirdDate-constraint="0" expand="true">
                 <depend id="75" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="75" name="testing" color="#8cb6ce" meeting="false" start="2020-04-20" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <task id="75" name="testing" color="#8cb6ce" meeting="false" start="2020-04-21" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
                 <depend id="76" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="76" name="diagrams" color="#8cb6ce" meeting="false" start="2020-04-27" duration="1" complete="0" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
+            <task id="76" name="diagrams" color="#8cb6ce" meeting="false" start="2020-04-28" duration="1" complete="0" thirdDate="2020-01-14" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
