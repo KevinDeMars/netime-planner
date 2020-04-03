@@ -1,0 +1,9 @@
+Header
+Time Cards
+Suggested Point Dist.
+Project Plan (Gantt)
+Design class diagram
+Sequence Diagrams
+GRASP Justifications
+Test Plan
+Links and Resources
