@@ -1,0 +1,7 @@
+Total Git Repository Commits: 195
+Per Member breakdown:
+Kevin = 94 commits
+Samuel = 47 commits
+Trent = 11 commits
+Josh = 27 commits
+Eric = 16 commits
